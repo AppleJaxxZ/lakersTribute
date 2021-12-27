@@ -138,8 +138,7 @@ select {
 
 .container {
   width: 100%;
-  margin: 24px auto;
-  max-width: 1440px;
+  margin: 24px 0;
 }
 
 .flow > *:where(:not(:first-child)) {
@@ -346,6 +345,19 @@ select {
 .underline-indicators > [aria-selected="true"] {
   color: hsl(var(--clr-white) / 1);
   border-color: hsl(var(--clr-white) / 1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.6rem;
+  background: hsl(var(--clr-purple));
+  border-radius: 8px;
+}
+
+.btn:hover,
+.btn:focus {
+  background: hsl(var(--clr-white));
+  transition: all 0.5s ease-in-out;
 }
 
 main {
