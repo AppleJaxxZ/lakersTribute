@@ -325,7 +325,6 @@ select {
 .primary-navigation a > span {
   font-weight: 700;
   margin-right: 0.5em;
-  letter-spacing: var();
 }
 
 .underline-indicators > * {
@@ -450,21 +449,13 @@ main {
     height: 10%;
   }
 
-  .navbar {
-    display: flex;
-    justify-content: center;
+  .primary-navigation {
+    justify-content: space-evenly;
     align-items: center;
   }
 
-  .primary-navigation {
+  .primary-navigation a > span {
     font-size: 1.6rem;
-  }
-  .primary-navigation[data-visible="true"] {
-    transform: translateX(0);
-  }
-
-  .primary-navigation.underline-indicators > .active {
-    border: 0;
   }
 }
 
@@ -475,14 +466,6 @@ main {
   .logo {
     width: 10%;
     height: 10%;
-  }
-
-  .primary-navigation {
-    font-size: 1.8rem;
-  }
-
-  .primary-navigation.underline-indicators > .active {
-    border: 0;
   }
 
   .card__desc {
