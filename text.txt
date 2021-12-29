@@ -4,7 +4,7 @@ Gather Data
 
 ENpoints and URLS
 
-var axios = require("axios").default;
+
 
 //Get Player Data by FirstName 
 var options = {
@@ -16,7 +16,7 @@ var options = {
   }
 };
 
-axios.request(options).then(function (response) {
+fetchs(options).then(function (response) {
 	console.log(response.data);
 }).catch(function (error) {
 	console.error(error);
@@ -40,15 +40,15 @@ axios.request(options).then(function (response) {
 "firstName":"Kobe"
 "lastName":"Bryant"
 "teamId":"17"
-"yearsPro":"19"
-"collegeName":"Lower Merion HS (PA)"
-"country":"USA"
+"yearsPro":"19" <------
+"collegeName":"Lower Merion HS (PA)"  <-----
+"country":"USA"  <-----
 "playerId":"79"
-"dateOfBirth":"1978-08-23"
+"dateOfBirth":"1978-08-23" <-----
 "affiliation":""
-"startNba":"1996"
-"heightInMeters":"1.98"
-"weightInKilograms":"96.2"
+"startNba":"1996"  <-----
+"heightInMeters":"1.98"  <-----
+"weightInKilograms":"96.2"  <----s
 "leagues":{...}1 item
 }
 ]
