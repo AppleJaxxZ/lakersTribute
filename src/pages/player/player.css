@@ -25,22 +25,26 @@ main {
   display: block;
   text-align: center;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 3.2rem;
   margin-bottom: 2rem;
+}
+
+.search__subheader {
+  font-size: 2rem;
 }
 
 .search-box {
   position: relative;
   width: 100%;
-  max-width: 360px;
+  max-width: 300px;
   height: 60px;
   border-radius: 120px;
-  outline: 2px solid blue;
+  outline: 2px solid hsl(var(--clr-purple) / 0.2);
 }
 
 .search-icon {
   position: absolute;
-  top: 15%;
+  top: 5%;
   left: 0;
   text-align: center;
   width: 86px;
