@@ -1,0 +1,46 @@
+/* Tribute Info */
+#tribute-info {
+  padding: 1.6rem;
+}
+
+.lead {
+  font-size: 1.8rem;
+}
+
+.lead span {
+  font-style: italic;
+  font-weight: 700;
+}
+
+#tribute-info p {
+  font-size: 1.3rem;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-div {
+  padding: 10px;
+  margin: 0;
+}
+
+#main-container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 50rem) {
+  .lead {
+    font-size: 3.2rem;
+  }
+
+  #tribute-info p {
+    font-size: 1.6rem;
+  }
+}

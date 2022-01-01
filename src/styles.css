@@ -24,6 +24,8 @@
   --ff-montserrat: "Montserrat", sans-serif;
 
   /* letter-spacing */
+  --letter-spacing-1: 4.75px;
+  --letter-spacing-2: 2.7px;
   --letter-spacing-3: 1px;
 }
 
@@ -38,6 +40,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
 }
 
 /* Reset margins */
@@ -422,7 +428,16 @@ main {
 
 .card__desc {
   padding: 2rem 0;
-  letter-spacing: var(--letter-spacing-3);
+}
+
+.card__desc h2 {
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-1);
+}
+
+.card__desc p {
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-2);
 }
 
 .card-img {

@@ -2,38 +2,55 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  <title>LA LAKERS TEAM </title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+
+  <title>LA LAKERS TEAM</title>
 </head>
 
 <body>
+  <h1 id='answer'></h1>
   <div class="container">
     <div class="banner">
-      <img src="/logo.jpg" alt="LA Lakers logo" class="logo">
-      <h1 class="title text-purple fs-500 letter-spacing-3">LA LAKERS TRIBUTE PAGE</h1>
+      <img src="/logo.jpg" alt="LA Lakers logo" class="logo" />
+      <h1 class="title text-purple fs-500 letter-spacing-3">
+        LA LAKERS TRIBUTE PAGE
+      </h1>
     </div>
     <header class="primary-header">
       <nav class="navbar">
-        <ul id="primary-navigation" data-visible="false"
-          class="primary-navigation underline-indicators flex uppercase letter-spacing-3">
-          <li class="active"><a class="text-gold" href="index.html"><span aria-hidden="true"> Home
-              </span></a>
+        <ul id="primary-navigation" data-visible="false" class="
+              primary-navigation
+              underline-indicators
+              flex
+              uppercase
+              letter-spacing-3
+            ">
+          <li class="active">
+            <a class="text-gold" href="index.html"><span aria-hidden="true"> Home </span></a>
           </li>
-          <li><a class="text-gold" href="about.html"><span aria-hidden="true">About</span></a>
+          <li>
+            <a class="text-gold" href="./pages/about/about.html"><span aria-hidden="true">About</span></a>
           </li>
-          <li><a class="text-gold" href="roster.html"><span aria-hidden="true">Roster</span></a>
+          <li>
+            <a class="text-gold" href="./pages/player/player.html"><span aria-hidden="true">Player</span></a>
           </li>
-          <li><a class="text-gold btn" href="kobe.html"><span aria-hidden="true">Kobe Bryant</span></a>
+          <li>
+            <a class="text-gold btn" href="./pages/kobe/kobe.html"><span aria-hidden="true">Kobe Bryant</span></a>
           </li>
         </ul>
       </nav>
@@ -43,94 +60,92 @@
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img class="card-img" src="/images/image-kobe-bryant.jpg" alt="Kobe Bryant">
+            <img class="card-img" src="/images/image-kobe-bryant.jpg" alt="Kobe Bryant" />
             <div class="card__desc">
-              <h2 class="text-dark">Kobe Bryant <span>#24</span></h2>
-              <p class="uppercase text-purple">Black Mamba</p>
+              <h2 class="text-purple">Kobe Bryant <span>#24</span></h2>
+              <p class="uppercase text-white">Black Mamba</p>
             </div>
           </div>
-          <div class="flip-card-back">
-            STATS
-          </div>
+          <div class="flip-card-back">STATS</div>
         </div>
       </div>
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img class="card-img" src="/images/image-magic-johnson.jpg" alt="Kobe Bryant">
+            <img class="card-img" src="/images/image-magic-johnson.jpg" alt="Kobe Bryant" />
             <div class="card__desc">
-              <h2 class="text-dark">Magic Johnson <span>#32</span></h2>
-              <p class="uppercase text-purple">Showtime</p>
+              <h2 class="text-purple">Magic Johnson <span>#32</span></h2>
+              <p class="uppercase text-white">Showtime</p>
             </div>
           </div>
-          <div class="flip-card-back">
-            STATS
-          </div>
+          <div class="flip-card-back">STATS</div>
         </div>
       </div>
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img class="card-img" src="/images/image-abdul-jabbar.jpg" alt="Kareem Abdul Jabbar">
+            <img class="card-img" src="/images/image-abdul-jabbar.jpg" alt="Kareem Abdul Jabbar" />
             <div class="card__desc">
-              <h2 class="text-dark">Kareem Abdul Jabbar <span>#33</span></h2>
-              <p class="uppercase text-purple">The Captain</p>
+              <h2 class="text-purple letter-spacing-1">
+                Kareem Abdul Jabbar <span>#33</span>
+              </h2>
+              <p class="uppercase text-white">The Captain</p>
             </div>
           </div>
-          <div class="flip-card-back">
-            STATS
-          </div>
+          <div class="flip-card-back">STATS</div>
         </div>
       </div>
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front ">
-            <img class="card-img" src="/images/image-shaq.jpg" alt="Shaquille O'Neal">
+          <div class="flip-card-front">
+            <img class="card-img" src="/images/image-shaq.jpg" alt="Shaquille O'Neal" />
             <div class="card__desc">
-              <h2 class="text-dark ">Shaquille O'Neal <span>#34</span></h2>
-              <p class="uppercase text-purple">The Diesel</p>
+              <h2 class="text-purple letter-spacing-1">
+                Shaquille O'Neal <span>#34</span>
+              </h2>
+              <p class="uppercase text-white">The Diesel</p>
             </div>
           </div>
-          <div class="flip-card-back">
-            STATS
-          </div>
+          <div class="flip-card-back">STATS</div>
         </div>
       </div>
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front ">
-            <img class="card-img" src="/images/image-james-worthy.jpg" alt="James Worthy">
+          <div class="flip-card-front">
+            <img class="card-img" src="/images/image-james-worthy.jpg" alt="James Worthy" />
             <div class="card__desc">
-              <h2 class="text-dark ">James Worthy<span> #42</span></h2>
-              <p class="uppercase text-purple">Big Game James</p>
+              <h2 class="text-purple">James Worthy<span> #42</span></h2>
+              <p class="uppercase text-white">Big Game James</p>
             </div>
           </div>
-          <div class="flip-card-back">
-            STATS
-          </div>
+          <div class="flip-card-back">STATS</div>
         </div>
       </div>
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front ">
-            <img class="card-img" src="/images/image-michael-cooper.jpg" alt="Michael Cooper">
+          <div class="flip-card-front">
+            <img class="card-img" src="/images/image-jerry-west.jpeg" alt="Jerry West" />
             <div class="card__desc">
-              <h2 class="text-dark ">Michael Cooper <span>#21</span></h2>
-              <p class="uppercase text-purple">Coop-a-Loop</p>
+              <h2 class="text-purple">Jerry West <span>#44</span></h2>
+              <p class="uppercase text-white">The Logo</p>
             </div>
           </div>
-          <div class="flip-card-back">
-            STATS
-          </div>
+          <div class="flip-card-back">STATS</div>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <p class="text-medium fs-400">Copyright 2021 &copy; All Rights Reserved
+      <p class="text-medium fs-400">
+        Copyright 2021 &copy; All Rights Reserved
       </p>
-      <p class="copyright text-purple">Coded by: AppleJaxxZ and @jacktree_coding</p>
+      <p class="copyright text-purple">
+        Coded by: AppleJaxxZ and jacktree_coding
+      </p>
+
     </footer>
   </div>
+  <!-- JS -->
+  <script type="text/javascript" src="./app.js" defer></script>
 </body>
 
 </html>

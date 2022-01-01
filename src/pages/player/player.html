@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link rel="stylesheet" href="./player.css">
+
+  <title>LA LAKERS TEAM</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="banner">
+      <img src="/logo.jpg" alt="LA Lakers logo" class="logo" />
+      <h1 class="title text-purple fs-500 letter-spacing-3">
+        LA LAKERS TRIBUTE PAGE
+      </h1>
+    </div>
+    <header class="primary-header">
+      <nav class="navbar">
+        <ul id="primary-navigation" data-visible="false" class="
+              primary-navigation
+              underline-indicators
+              flex
+              uppercase
+              letter-spacing-3
+            ">
+          <li>
+            <a class="text-gold" href="/src/index.html"><span aria-hidden="true"> Home </span></a>
+          </li>
+          <li>
+            <a class="text-gold" href="../about/about.html"><span aria-hidden="true">About</span></a>
+          </li>
+          <li class="active">
+            <a class="text-gold" href="player.html"><span aria-hidden="true">Player</span></a>
+          </li>
+          <li>
+            <a class="text-gold btn" href="../kobe/kobe.html"><span aria-hidden="true">Kobe Bryant</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- Form -->
+  <main>
+    <p class="description letter-spacing-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat
+      ea odit itaque
+      tempore doloribus quam quas ducimus architecto nemo, obcaecati fuga vitae rem suscipit consectetur placeat, vel
+      velit voluptates necessitatibus quis tenetur omnis, aliquam aliquid nihil. Dolorem animi sed saepe et a veniam,
+      officiis deserunt, vero, consequatur fugiat optio.</p>
+    <div class="search-container">
+      <div class="box">
+        <div class="title-box uppercase text-purple letter-spacing-2">
+          <h2 class="search__header">Search for current Laker player</h2>
+          <h3 class="search__subheader">Enter last name</h3>
+        </div>
+        <div class="search-box">
+          <div class="search-icon">
+            <i class="fas fa-search fa-2x"></i>
+          </div>
+          <form action="" class="search-form">
+            <input type="text" id="search" class="search" placeholder="Search..." autocomplete="off" />
+            <input type="submit" hidden>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="text-medium fs-400">
+      Copyright 2021 &copy; All Rights Reserved
+    </p>
+  </footer>
+</body>
+
+</html>
