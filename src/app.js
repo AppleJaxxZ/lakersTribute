@@ -1,4 +1,6 @@
-let meow = document.getElementById('answer');
+require("dotenv").config();
+
+let meow = document.getElementById("answer");
 // const players = [
 //   {
 //     playerName: "Kobe Bryant",
@@ -58,33 +60,32 @@ let meow = document.getElementById('answer');
 
 // console.log(players[0]);
 
-
-
-
 var options = {
-  method: 'GET',
-  url: 'https://api-nba-v1.p.rapidapi.com/players/teamId/17',
+  method: "GET",
+  url: "https://api-nba-v1.p.rapidapi.com/players/teamId/17",
   headers: {
-    'x-rapidapi-host': 'api-nba-v1.p.rapidapi.com',
-    'x-rapidapi-key': '7d897556d6msh0b1c6bf9dd7b131p1e7512jsn912548d77653'
-  }
+    "x-rapidapi-host": "api-nba-v1.p.rapidapi.com",
+    "x-rapidapi-key": process.env.API_KEY,
+  },
 };
 
-
-
-
 const getPlayers = () => {
-  axios.request(options).then(response => {
-    return response.data.api.players
-  }).then(data => {
-    let newData = data.filter(player => player.leagues.standard.active > 0)
-    console.log(newData)
-    const html = newData.map(player => {
-      return ` <p> Name: ${player.firstName}-${player.lastName}</p>`;
-    }).join("");
-    meow.insertAdjacentHTML("afterbegin", html);
-  }).catch(err => console.log(err))
-}
-
+  axios
+    .request(options)
+    .then((response) => {
+      return response.data.api.players;
+    })
+    .then((data) => {
+      let newData = data.filter((player) => player.leagues.standard.active > 0);
+      console.log(newData);
+      const html = newData
+        .map((player) => {
+          return ` <p> Name: ${player.firstName}-${player.lastName}</p>`;
+        })
+        .join("");
+      meow.insertAdjacentHTML("afterbegin", html);
+    })
+    .catch((err) => console.log(err));
+};
 
 getPlayers();
