@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AppleJaxxZ/lakersTribute#readme",
   "dependencies": {
     "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
     "node-fetch": "^2.6.6"
   }
 }
